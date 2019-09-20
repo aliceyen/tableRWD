@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Untitled Document</title>
+        <style>
+			#customers {
+				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			
+			#customers td, #customers th {
+				border: 1px solid #ddd;
+				padding: 8px;
+			}
+			
+			/*#customers tr:nth-child(even){background-color: #f2f2f2;}*/
+			
+			/*#customers tr:hover {background-color: #ddd;}*/
+			
+			#customers th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: left;
+				background-color: #4CAF50;
+				color: white;
+			}
+			@media only screen and (max-width:768px){
+				thead{
+					display: none;
+				}
+				td{
+					display: block;
+					position: relative;
+					overflow: hidden;
+					z-index: 2;
+					background-color: #4CAF50;
+				}
+				td:before{
+					content: attr(data-title);
+					width: auto;
+					min-width: 20%;
+					font-weight: 900;
+					background-color: #4CAF50;
+					color:#FFF;
+					margin-right: 15px;
+					position: absolute;
+					z-index: 2;
+					display: block;
+					height: 100%;
+					padding: 5px;/*同 td span*/
+				}
+				td span{
+					margin-left: 26%;
+					background: #FFF;
+					display: block;
+					padding: 5px;/*同 td:before*/
+				}
+				#customers td, #customers th {
+					padding: 0;
+				}
+			}
+		</style>
+    </head>
+    
+    <body>
+    	<table id="customers">
+            <thead>
+                <tr>
+                    <th>序號</th>
+                    <th>產品名稱</th>
+                    <th>價格</th>
+                    <th>產品描述</th>
+                </tr>
+			</thead>
+            <tbody>
+                <tr>
+                    <td data-title="序號"><span>A2018010001</span></td>
+                    <td data-title="產品名稱"><span>青醬佐番茄香煎烏骨雞腿義式千層麵</span></td>
+                    <td data-title="價格"><span>NT.250</span></td>
+                    <td data-title="產品描述"><span>獨家青醬、美濃橙蜜香番茄、特選烏骨雞腿、手桿義式千層麵</span></td>
+                </tr>
+                <tr>
+                    <td data-title="序號"><span>A2018010002</span></td>
+                    <td data-title="產品名稱"><span>墨魚汁佐迷迭香鮮蝦干貝天使麵</span></td>
+                    <td data-title="價格"><span>NT.280</span></td>
+                    <td data-title="產品描述"><span>西班牙進口墨魚汁、台灣無毒蝦、北海道干貝、特選天使細麵</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
