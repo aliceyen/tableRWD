@@ -116,9 +116,8 @@ scroll滑到最右邊時漸層消失：
         <div class="red show"></div>
     </div>
 ```
-## 特色：<thead>會隨著scroll往下滾動，於table置頂
 
-*  [範例](http://www.milky-sky.com/brangista/tableRwdShare/Bootstrap_TableRwd/index.html)  
+*  [範例](http://www.milky-sky.com/brangista/tableRwdShare/leftFixed/Untitled-2.html)  
 
 
 
