@@ -1,4 +1,4 @@
-# 惱人的tableRwd處理方法彙整
+# tableRwd處理方法彙整
 
 
 
