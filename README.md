@@ -38,11 +38,11 @@
 
 ## 二：使用破壞表格方式“data-title”
 
-PC狀態顯示
+PC狀態
 
 ![printscreen](images/03.png)
 
-mobile
+mobile狀態
 
 ![printscreen](images/04.png)
 
