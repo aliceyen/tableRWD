@@ -217,27 +217,6 @@ scroll滑到最右邊時漸層消失：
 
    ![printscreen](images/10.png)
 
-
-實現方式：
-```html
-    <!-- 載入以下css及js -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/rwd-table.min.css?v=5.3.1">
-    <link rel="stylesheet" href="css/docs.min.css?v=5.3.1">
-    <script src="js/jquery1.11.0.js"></script>
-    <script src="js/bootstrap3.1.1.js"></script>
-    <script src="js/rwd-table.js?v=5.3.1"></script>
-
-    <!-- 表格部分的框架 -->
-    <div class="container-item">
-        <div class="container-block customers">
-            <table width="100%" class="customersTable" id="customers">
-                ....
-            </table>
-        </div>
-        <div class="red show"></div>
-    </div>
-```
 ## 特色：<thead>會隨著scroll往下滾動，於table置頂
 
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/Bootstrap_TableRwd/index.html)  
@@ -252,12 +231,3 @@ scroll滑到最右邊時漸層消失：
 ## 只有PC才可以使用的表格，手機會有小問題：
 *  [左右欄位固定範例](https://datatables.net/extensions/colreorder/examples/integration/fixedcolumns.html)  
 *  [頂部欄位固定範例](https://datatables.net/extensions/fixedheader/examples/integration/colreorder.html)  
-
-
-## Resource
-
-- [The Tumult Youtube channel](https://www.youtube.com/user/TumultHype/videos)
-
-- [Tutorials 官方教學影片](https://tumult.com/hype/tutorials/)
-
-- [Tumult Hype Documentation 說明文件](https://tumult.com/hype/documentation/)
