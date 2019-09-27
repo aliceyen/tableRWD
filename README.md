@@ -226,6 +226,6 @@ scroll滑到最右邊時漸層消失：
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/Bootstrap_TableRwd/index.html)  
 
 
-## 只有PC才可以使用的表格，手機會有小問題：
+## 只有PC才可以使用的表格，手機會有問題：
 *  [左右欄位固定範例](https://datatables.net/extensions/colreorder/examples/integration/fixedcolumns.html)  
 *  [頂部欄位固定範例](https://datatables.net/extensions/fixedheader/examples/integration/colreorder.html)  
