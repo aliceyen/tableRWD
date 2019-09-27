@@ -226,7 +226,7 @@ scroll滑到最右邊時漸層消失：
    
    ![printscreen](images/11.png)
 
-透過選單勾選，可以讓使用者自行選擇想顯示的欄位：
+*  [範例](https://datatables.net/extensions/colreorder/examples/integration/fixedcolumns.html)  
 
 ## 只有PC才可以使用的表格，手機會有小問題：
 *  [左右欄位固定範例](https://datatables.net/extensions/colreorder/examples/integration/fixedcolumns.html)  
