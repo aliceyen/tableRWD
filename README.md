@@ -222,7 +222,7 @@ scroll滑到最右邊時漸層消失：
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/Bootstrap_TableRwd/index.html)  
 
 
-## 五：表格內容過多時，使用分頁切換
+## 六：表格內容過多時，使用分頁切換
    
    ![printscreen](images/11.png)
 
