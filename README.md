@@ -202,6 +202,8 @@ scroll滑到最右邊時漸層消失：
 	</div>
 ```
 
+   ![printscreen](images/leftFixed.png)
+   
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/leftFixed/Untitled-2.html)  
 
 
