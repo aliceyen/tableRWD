@@ -33,8 +33,7 @@
 
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/%E9%9A%B1%E8%97%8F%E4%B8%8D%E9%87%8D%E8%A6%81%E6%95%B8%E6%93%9A%E5%88%97.html)  
 
-
-
+* * *
 
 ## 二：使用破壞表格方式“data-title”
 
@@ -54,8 +53,7 @@ mobile狀態
 ## 資訊清楚，但可能會產生表格攏長問題。
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/dataTitle.html)  
 
-
-
+* * *
 
 ## 三：橫向scroll表格
 
@@ -88,7 +86,7 @@ scroll滑到最右邊時漸層消失：
 
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/fglife_TableRwd/scrollX.html)  
 
-
+* * *
 
 
 ## 四：固定左方首列，剩餘列橫向滾動 
@@ -206,10 +204,16 @@ scroll滑到最右邊時漸層消失：
    
 *  [範例](http://www.milky-sky.com/brangista/tableRwdShare/leftFixed/Untitled-2.html)  
 
+* * *
 
+## 五：結合第三點的漸層表格及第四點的左方首列固定而產生的表格_（lotte研究）
 
+   ![printscreen](images/lotteShare.gif)
+*  [範例](http://www.milky-sky.com/brangista/tableRwdShare/tableRWD_lotteShare/index.html)  
 
-## 五：固定上方首列，剩餘列橫向滾動，讓使用者自行勾選想隱藏的數據列
+* * *
+  
+## 六：固定上方首列，剩餘列橫向滾動，讓使用者自行勾選想隱藏的數據列
    
    ![printscreen](images/08.png)
 
