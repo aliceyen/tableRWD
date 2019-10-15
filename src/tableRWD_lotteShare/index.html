@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RWD表格測試</title>
+	<!-- bootstrap 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Font Awesome v4.7.0 -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans|Noto+Sans+TC">
+
+	<script type="text/javascript" language="javascript" src="js/jquery.min.js"></script>
+	<style>
+
+		.table-scroll {
+			position: relative;
+			max-width: 800px;
+			width: 90%;
+			margin: 2rem auto;
+			overflow: hidden;
+			border: 1px solid #ccc;
+		}
+		.table-wrap {
+			width: 100%;
+			overflow: auto;
+		}
+		.main-table{
+			width: 100%;
+			margin: auto;
+			border-collapse: separate;
+			border-spacing: 0;
+			font-weight: normal;
+		}
+		.main-table th, .main-table td {
+			padding: 5px 10px;
+			/* white-space: nowrap; */
+			min-width: 120px;
+			vertical-align: top;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+		}
+		
+		.main-table tr:nth-child(odd){
+			background: #f7f7f7;
+		}
+		.main-table tr:nth-child(even){
+			background: #ededed;
+		}
+		.main-table thead tr, .main-table tfoot tr,
+		.main-table thead tr:nth-child(even), .main-table thead tr:nth-child(odd),
+		.main-table tfoot tr:nth-child(even), .main-table tfoot tr:nth-child(odd){
+			background: #cbcbcb;
+		}
+		.white-mask{
+			height: 100%;
+			position: absolute;
+			width: 10%;
+			top: 0;
+			left: auto;
+			right: 0;
+			background: transparent;
+		}
+		.white-mask.show{
+			background: linear-gradient(to left, #fff 15%, rgba(255,255,255,0) 100%);
+		}
+		.clone {
+			position: absolute;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+		}
+		.clone th, .clone td {
+			visibility: hidden
+		}
+		.clone td, .clone th {
+			border-color: transparent
+		}
+		/* .clone tbody th {
+			visibility: visible;
+		} */
+		.clone .fixed-side {
+			visibility: visible;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+		}
+		.clone thead, .clone tfoot{
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+	<div  class="table-scroll idTableScroll" >
+		<div class="white-mask show"></div>
+	  <div class="table-wrap">
+			<table class="main-table">
+				<thead>
+					<tr>
+						<th class="fixed-side" scope="col">監測站名稱</th>
+						<th scope="col">1.壓力</th>
+						<th scope="col">2.流量</th>
+						<th scope="col">3.水質</th>
+						<th scope="col">4.屬性4</th>
+						<th scope="col">5.屬性5</th>
+						<th scope="col">6.屬性6</th>
+						<th scope="col">7.屬性7</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="fixed-side">冬山鄉德興一路46號監測站</th>
+						<td><p>水質計壓力 0.123456789kg/cm2</p></td>
+						<td>
+							<p>流量計原水正累積流量 3,434.64 cmd</p>
+							
+						</td>
+						<td>原水濁度 0.02 NTU</td>
+						<td>清水池濁度計濁度 0.05 NTU</td>
+						<td>清水池餘氯計餘氯 0.49 PPM</td>
+						<td>原水濁度3 0.02 NTU</td>
+						<td>清水出水瞬間流量 21,405 cmd</td>
+					</tr>
+					<tr>
+						<th class="fixed-side">宜蘭縣五結鄉協和中路羅東聯絡道4k+040分隔島上_監測站</th>
+						<td>
+							<p>水質計壓力 0.123456789kg/cm2</p>
+						</td>
+						<td>
+							<p>清水出水瞬間流量 21,405 cmd</p>
+						</td>
+						<td>原水濁度 0.02 NTU</td>
+						<td>清水池濁度計濁度 0.05 NTU</td>
+						<td>清水池餘氯計餘氯 0.49 PPM</td>
+						<td>原水濁度3 0.02 NTU</td>
+						<td>清水出水瞬間流量 21,405 cmd</td>
+					</tr>
+					<tr>
+						<th class="fixed-side">冬山鄉德興一路46號監測站</th>
+						<td>
+							<p>水質計壓力 0.123456789kg/cm2</p>
+						</td>
+						<td>
+							<p>數字測試 54,321.123456cmd</p>
+						</td>
+						<td>原水濁度 0.02 NTU</td>
+						<td>清水池濁度計濁度 0.05 NTU</td>
+						<td>清水池餘氯計餘氯 0.49 PPM</td>
+						<td>原水濁度3 0.02 NTU</td>
+						<td>清水出水瞬間流量 21,405 cmd</td>
+					</tr>
+				</tbody>
+				<!-- <tfoot>
+				<tr>
+					<th class="fixed-side">&nbsp;</th>
+					<td>Footer 2</td>
+					<td>Footer 3</td>
+					<td>Footer 4</td>
+					<td>Footer 5</td>
+					<td>Footer 6</td>
+					<td>Footer 7</td>
+					<td>Footer 8</td>
+				</tr>
+				</tfoot> -->
+			</table>
+		</div>
+
+	</div>
+	
+	<script>
+	// requires jquery library
+	jQuery(document).ready(function() {
+		 jQuery(".main-table").clone(true).appendTo('.idTableScroll').addClass('clone');   
+		 
+		 $('.table-wrap').scroll(function () {
+				scrollWindow(this);
+		});
+	});
+	function scrollWindow(obj) {
+			var $obj = $(obj);
+		  console.log($obj.width() +','+ $obj.scrollLeft() + ',' + $obj[0].scrollWidth);
+			if (($obj.width() + $obj.scrollLeft()) == $obj[0].scrollWidth) //
+				$obj.siblings('.white-mask').removeClass('show');
+			else
+				$obj.siblings('.white-mask').addClass('show');
+		}
+	</script>
+	
+</body>
+</html>
