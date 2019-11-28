@@ -206,10 +206,11 @@ scroll滑到最右邊時漸層消失：
 
 * * *
 
-## 五：結合第三點的漸層表格及第四點的左方首列固定而產生的表格_（lotte研究）
+## 五：結合第三點的漸層表格及第四點的左方或是右方首列固定而產生的表格_（lotte研究）
 
    ![printscreen](images/lotteShare.gif)
-*  [範例](http://www.milky-sky.com/brangista/tableRwdShare/tableRWD_lotteShare/index.html)  
+*  [左方首列固定](http://www.milky-sky.com/brangista/tableRwdShare/tableRWD_lotteShare/index.html)  
+*  [右方首列固定](http://www.milky-sky.com/brangista/tableRwdShare/tableRWD-right/index.html)  
 
 * * *
   
