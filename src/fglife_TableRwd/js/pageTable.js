@@ -23,8 +23,11 @@ function resizeWindow() {
 
 function scrollWindow(obj) {
     var $obj = $(obj);
-    if (($obj.width() + $obj.scrollLeft()) == $obj[0].scrollWidth) //滑到最右邊
+    if (Math.round($obj.width() + $obj.scrollLeft()) == $obj[0].scrollWidth) //滑到最右邊
+    {
         $obj.siblings('.red').removeClass('show');
-    else
+    }
+    else {
         $obj.siblings('.red').addClass('show');
+    }
 }
